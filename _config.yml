@@ -1,0 +1,46 @@
+# Site settings
+title: James Shih
+description: > # this means to ignore newlines until "baseurl:"
+  Web development evolving.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://hyjk2000.github.io" # the base hostname & protocol for your site
+nav:
+  - about
+  - posts
+  - categories
+  - download
+avatar_url: https://secure.gravatar.com/avatar/deb3a965cd52a9103cd865bbf01de5af
+twitter_username:
+github_username:  hyjk2000
+disqus_shortname: hyjk2000
+google_analytics: UA-57240651-1
+
+# Front Matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+permalink: /:year/:month/:day/:title.html
+highlighter: rouge
+gist:
+  noscript: false
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - vendor
+gems:
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-sitemap
+  - jemoji

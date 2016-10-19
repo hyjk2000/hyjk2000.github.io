@@ -1,0 +1,61 @@
+---
+layout: page
+title: Page Not Found
+permalink: /404.html
+---
+<style>
+body {
+    perspective: 1600px;
+}
+.site-header {
+    transform: rotate(3deg);
+    transform-origin: left;
+    animation: drop 1s ease-in;
+}
+@keyframes drop {
+    from { transform: rotate(0) }
+}
+.post-header {
+    transform: rotate(-2deg);
+    transform-origin: right;
+    animation: swing 1s ease-in;
+}
+@keyframes swing {
+    from { transform: rotate(0) }
+}
+.site-footer {
+    transform: rotateX(60deg);
+    transform-origin: bottom;
+    animation: fall 1s ease-in;
+}
+@keyframes fall {
+    from { transform: rotateX(0) }
+}
+.fail {
+    text-align: center;
+}
+.fail h1 {
+    font-size: 4em;
+}
+.hand {
+    display: inline-block;
+    animation: raise 4s infinite alternate;
+}
+@keyframes raise {
+    80% { transform: translateY(0) }
+    to { transform: translateY(-.2em) }
+}
+.head {
+    display: inline-block;
+    animation: rotate 4s infinite alternate;
+}
+@keyframes rotate {
+    80% { transform: rotate(0) }
+    to { transform: rotate(15deg) }
+}
+</style>
+
+<div class="fail">
+  <h1><span class="hand">¯\_</span><span class="head">(ツ)</span><span class="hand">_/¯</span></h1>
+  <p>Grats. You broke it.</p>
+</div>

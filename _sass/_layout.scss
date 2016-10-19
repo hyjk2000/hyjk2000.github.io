@@ -1,0 +1,321 @@
+/**
+ * Site header
+ */
+.site-header {
+    background-color: $header-bg-color;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    color: $header-color;
+    min-height: $header-height;
+
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 99;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: $header-height;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    text-decoration: none !important;
+    transition: color .5s;
+
+    &,
+    &:visited {
+        color: $header-color;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 45px;
+        vertical-align: top;
+        margin-top: 5px;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: $header-height;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $header-color;
+        line-height: $base-line-height;
+        text-decoration: none;
+        transition: color .5s;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $header-color;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+
+            a {
+                color: $text-color;
+            }
+        }
+
+        &:hover {
+            background-color: $background-color;
+            border-color: $grey-color-light;
+
+            .trigger {            
+                display: block;
+                padding-bottom: 5px;
+            }
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    background-color: $footer-bg-color;
+    border-top: 1px solid $grey-color-light;
+    color: #fff;
+    padding: $spacing-unit 0;
+
+    a {
+        color: $footer-color;
+        text-decoration: none;
+        transition: color .5s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.posts-within {
+    margin-left: 0;
+    list-style: none;
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    position: relative;
+    padding-right: 50px;
+    font-size: 24px;
+
+    @include media-query($on-palm) {
+        font-size: 20px;
+        display: block;
+    }
+
+    time {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 14px;
+        line-height: 36px;
+        color: $grey-color;
+        text-transform: uppercase;
+
+        @include media-query($on-palm) {
+            line-height: 30px;
+        }
+    }
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    background-color: $title-bg-color;
+    background-position: 50% 30%;
+    background-size: cover;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    color: $header-color;
+    padding-top: $spacing-unit + $header-height;
+    padding-bottom: $spacing-unit;
+
+    &.with-bg {
+        padding-top: 50vh;
+    }
+
+    h1 {
+        color: #fff;
+    }
+
+    .post-meta {
+        color: inherit;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: color .5s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+---
+layout: default
+title: Posts
+permalink: /posts/
+---
+<header class="post-header">
+  <div class="wrapper">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <span class="year-list">
+      {% capture curr_year %}{{ site.time | date: "%Y" }}{% endcapture %}
+      {% for year in (2009..curr_year) reversed %}
+      <a href="#year-{{ year }}">
+        {{ year }}
+      </a>
+      {% endfor %}
+    </span>
+  </div>
+</header>
+
+<div class="page-content">
+  <div class="wrapper">
+    <div class="posts">
+
+      <div class="post-list">
+        {% for post in site.posts %}
+        {% unless post.next %}
+
+        {% unless forloop.first %}</ul></div>{% endunless %}
+
+        <div class="archive-year">
+            <h2 class="post-year" id="year-{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+            <ul class="posts-within">
+
+        {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+
+        {% unless forloop.first %}</ul></div>{% endunless %}
+
+        <div class="archive-year">
+            <h2 class="post-year" id="year-{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
+            <ul class="posts-within">
+
+        {% endif %}
+        {% endunless %}
+
+          <li>
+              <h2 class="post-link">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d" }}</time>
+              </h2>
+          </li>
+
+        {% if forloop.last %}</ul></div>{% endif %}
+
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div>

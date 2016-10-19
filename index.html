@@ -1,0 +1,31 @@
+---
+layout: fullscreen
+---
+
+<div class="home-content">
+  <div class="centered">
+
+    <img src="{{ site.avatar_url }}?s=256" srcset="{{ site.avatar_url }}?s=512 2x" alt="logo">
+
+    <h1>James Shih</h1>
+    <h2>
+      <span>is a</span>
+      <span class="anim-text">
+        <ul>
+          <li>Web Developer</li>
+          <li>Photographer</li>
+          <li>Motorbike Rider</li>
+          <li>Family Man</li>
+          <li>Kitten Owner</li>
+        </ul>
+      </span>
+    </h2>
+
+    <nav class="site-nav">
+      {% for page in site.nav %}
+      <a class="page-link" href="/{{ page | prepend: site.baseurl }}/">{{ page | capitalize }}</a>
+      {% endfor %}
+    </nav>
+
+  </div>
+</div>
