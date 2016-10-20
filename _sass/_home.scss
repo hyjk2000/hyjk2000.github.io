@@ -102,6 +102,7 @@ $anim-text-lines: 5;
             list-style-type: none;
             margin: 0;
             text-align: left;
+            will-change: transform;
 
             @keyframes rolling {
                 to { transform: translateY($anim-text-lines * -2em) }
