@@ -1,10 +1,10 @@
 // Variables
 $avatar-size: 512px;
-$anim-text-duration: 30s;
-$anim-text-lines: 5;
+$anim-text-duration: 20s;
+$anim-text-height: 1.5em;
 
 .home-content {
-    background-color: $title-bg-color;
+    @include bg-aqua-marine;
     color: $header-color;
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -67,37 +67,18 @@ $anim-text-lines: 5;
 
         span, ul {
             display: inline-block;
-            line-height: 2em;
+            line-height: $anim-text-height;
             vertical-align: middle;
         }
 
         .anim-text {
-            height: 2em;
+            height: $anim-text-height;
             overflow: hidden;
             position: relative;
-
-            &:after {
-                $anim-text-time: $anim-text-duration / $anim-text-lines;
-                animation: masking $anim-text-time ($anim-text-time * .1) infinite;
-                background-color: $title-bg-color;
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 100%;
-                width: 110%;
-                height: 100%;
-
-                @keyframes masking {
-                    80% { transform: translateX(0) }
-                    90% { transform: translateX(-100%) }
-                    to { transform: translateX(0) }
-                }
-            }
         }
 
         ul {
-            animation: rolling $anim-text-duration steps($anim-text-lines, end) infinite;
+            animation: rolling $anim-text-duration infinite;
             color: #fff;
             list-style-type: none;
             margin: 0;
@@ -105,7 +86,12 @@ $anim-text-lines: 5;
             will-change: transform;
 
             @keyframes rolling {
-                to { transform: translateY($anim-text-lines * -2em) }
+                0%, 15%  { transform: translateY(0) }
+                20%, 35% { transform: translateY(1 * -$anim-text-height) }
+                40%, 55% { transform: translateY(2 * -$anim-text-height) }
+                60%, 75% { transform: translateY(3 * -$anim-text-height) }
+                80%, 95% { transform: translateY(4 * -$anim-text-height) }
+                100%     { transform: translateY(5 * -$anim-text-height) }
             }
         }
 

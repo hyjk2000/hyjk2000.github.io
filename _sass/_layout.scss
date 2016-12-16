@@ -3,7 +3,8 @@
  */
 .site-header {
     background-color: $header-bg-color;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
     color: $header-color;
     min-height: $header-height;
 
@@ -122,9 +123,9 @@
  * Site footer
  */
 .site-footer {
-    background-color: $footer-bg-color;
     border-top: 1px solid $grey-color-light;
-    color: #fff;
+    background-color: $footer-bg-color;
+    color: $footer-color;
     padding: $spacing-unit 0;
 
     a {
@@ -133,7 +134,7 @@
         transition: color .5s;
 
         &:hover {
-            color: #fff;
+            color: darken($footer-color, 25%);
         }
     }
 }
@@ -252,10 +253,9 @@
  * Posts
  */
 .post-header {
-    background-color: $title-bg-color;
+    @include bg-aqua-marine;
     background-position: 50% 30%;
     background-size: cover;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
     color: $header-color;
     padding-top: $spacing-unit + $header-height;
     padding-bottom: $spacing-unit;
