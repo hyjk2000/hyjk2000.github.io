@@ -3,6 +3,7 @@
  */
 .site-header {
     background-color: $header-bg-color;
+    border-bottom: 1px solid darken($header-bg-color, 10%);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     color: $header-color;
@@ -24,11 +25,11 @@
 
     &,
     &:visited {
-        color: $header-color;
+        color: $nav-color;
     }
 
     &:hover {
-        color: #fff;
+        color: $brand-color;
     }
 
     img {
@@ -49,7 +50,7 @@
     }
 
     .page-link {
-        color: $header-color;
+        color: $nav-color;
         line-height: $base-line-height;
         text-decoration: none;
         transition: color .5s;
@@ -60,7 +61,7 @@
         }
 
         &:hover {
-            color: #fff;
+            color: $brand-color;
         }
     }
 
@@ -86,7 +87,7 @@
                 height: 15px;
 
                 path {
-                    fill: $header-color;
+                    fill: $nav-color;
                 }
             }
         }
@@ -104,7 +105,7 @@
             background-color: $background-color;
             border-color: $grey-color-light;
 
-            .trigger {            
+            .trigger {
                 display: block;
                 padding-bottom: 5px;
             }

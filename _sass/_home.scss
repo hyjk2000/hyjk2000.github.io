@@ -105,7 +105,17 @@ $anim-text-height: 1.5em;
         position: static;
 
         .page-link {
+            color: $header-color;
             padding: 5px 0;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-color: transparent;
         }
     }
 }
