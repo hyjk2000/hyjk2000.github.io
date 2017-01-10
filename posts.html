@@ -7,8 +7,9 @@ permalink: /posts/
   <div class="wrapper">
     <h1 class="post-title">{{ page.title }}</h1>
     <span class="year-list">
-      {% capture curr_year %}{{ site.time | date: "%Y" }}{% endcapture %}
-      {% for year in (2009..curr_year) reversed %}
+      {% capture latest_year %}{{ site.posts.first.date | date: "%Y" }}{% endcapture %}
+      {% capture earliest_year %}{{ site.posts.last.date | date: "%Y" }}{% endcapture %}
+      {% for year in (earliest_year..latest_year) reversed %}
       <a href="#year-{{ year }}">
         {{ year }}
       </a>
