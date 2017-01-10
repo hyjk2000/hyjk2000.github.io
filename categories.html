@@ -7,7 +7,7 @@ permalink: /categories/
   <div class="wrapper">
     <h1 class="post-title">{{ page.title }}</h1>
     <span class="category-list">
-      {% for category in (site.categories | sort: 'first') %}
+      {% for category in site.categories %}
       <a href="#category-{{ category | first | slugize }}">
         {{ category | first }}
       </a>
@@ -21,7 +21,7 @@ permalink: /categories/
     <div class="posts">
 
       <div id="post-list">
-        {% for category in (site.categories | sort: 'first') %}
+        {% for category in site.categories %}
         <div class="category" id="category-{{ category | first | slugize }}">
           <h2 class="post-category">{{ category | first }}</h2>
           <ul class="posts-within">
