@@ -1,9 +1,11 @@
 require 'html-proofer'
 
+task :default => [:test]
+
 task :test => :build do
   HTMLProofer.check_directory('./_site',
-                    empty_alt_ignore: true,
-                    disable_external: true).run
+                              empty_alt_ignore: true,
+                              disable_external: true).run
 end
 
 task :build do
