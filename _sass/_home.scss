@@ -4,118 +4,118 @@ $anim-text-duration: 20s;
 $anim-text-height: 1.5em;
 
 .home-content {
-    @include bg-aqua-marine;
-    color: $header-color;
+  @include bg-aqua-marine;
+  color: $header-color;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  text-align: center;
+  white-space: nowrap;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .centered {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    overflow: visible;
+    vertical-align: middle;
+  }
+
+  img {
+    border: 10px solid $header-color;
+    border-radius: 50%;
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    text-align: center;
-    white-space: nowrap;
+    top: 0;
+    left: $avatar-size / -4 - 10px;
+    width: $avatar-size / 2;
+    opacity: .2;
+    animation: appear 3s ease-out;
 
-    &:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
+    @keyframes appear {
+      from {
+        -webkit-filter: blur(30px);
+        filter: blur(30px);
+        transform: scale(.7);
+      }
+    }
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  h1 {
+    position: relative;
+    color: #fff;
+    font-size: 88px;
+
+    @include media-query($on-palm) {
+      font-size: 44px;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 200;
+    margin-right: -40px;
+    text-align: right;
+
+    span, ul {
+      display: inline-block;
+      line-height: $anim-text-height;
+      vertical-align: middle;
     }
 
-    .centered {
-        display: inline-block;
-        padding: 0;
-        position: relative;
-        overflow: visible;
-        vertical-align: middle;
+    .anim-text {
+      height: $anim-text-height;
+      overflow: hidden;
+      position: relative;
     }
 
-    img {
-        border: 10px solid $header-color;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        left: $avatar-size / -4 - 10px;
-        width: $avatar-size / 2;
-        opacity: .2;
-        animation: appear 3s ease-out;
+    ul {
+      animation: rolling $anim-text-duration infinite;
+      color: #fff;
+      list-style-type: none;
+      margin: 0;
+      text-align: left;
+      will-change: transform;
 
-        @keyframes appear {
-            from {
-                -webkit-filter: blur(30px);
-                filter: blur(30px);
-                transform: scale(.7);
-            }
-        }
+      @keyframes rolling {
+        0%, 15%  { transform: translateY(0) }
+        20%, 35% { transform: translateY(1 * -$anim-text-height) }
+        40%, 55% { transform: translateY(2 * -$anim-text-height) }
+        60%, 75% { transform: translateY(3 * -$anim-text-height) }
+        80%, 95% { transform: translateY(4 * -$anim-text-height) }
+        100%     { transform: translateY(5 * -$anim-text-height) }
+      }
     }
 
-    h1, h2 {
-        margin: 0;
+    @include media-query($on-palm) {
+      font-size: 20px;
+      margin-right: -30px;
     }
+  }
 
-    h1 {
-        position: relative;
+  .site-nav {
+    position: static;
+
+    .page-link {
+      color: $header-color;
+      padding: 5px 0;
+
+      &:hover {
         color: #fff;
-        font-size: 88px;
-
-        @include media-query($on-palm) {
-            font-size: 44px;
-        }
+      }
     }
 
-    h2 {
-        font-size: 28px;
-        font-weight: 200;
-        margin-right: -40px;
-        text-align: right;
-
-        span, ul {
-            display: inline-block;
-            line-height: $anim-text-height;
-            vertical-align: middle;
-        }
-
-        .anim-text {
-            height: $anim-text-height;
-            overflow: hidden;
-            position: relative;
-        }
-
-        ul {
-            animation: rolling $anim-text-duration infinite;
-            color: #fff;
-            list-style-type: none;
-            margin: 0;
-            text-align: left;
-            will-change: transform;
-
-            @keyframes rolling {
-                0%, 15%  { transform: translateY(0) }
-                20%, 35% { transform: translateY(1 * -$anim-text-height) }
-                40%, 55% { transform: translateY(2 * -$anim-text-height) }
-                60%, 75% { transform: translateY(3 * -$anim-text-height) }
-                80%, 95% { transform: translateY(4 * -$anim-text-height) }
-                100%     { transform: translateY(5 * -$anim-text-height) }
-            }
-        }
-
-        @include media-query($on-palm) {
-            font-size: 20px;
-            margin-right: -30px;
-        }
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
     }
-
-    .site-nav {
-        position: static;
-
-        .page-link {
-            color: $header-color;
-            padding: 5px 0;
-
-            &:hover {
-                color: #fff;
-            }
-        }
-
-        &:hover {
-            background-color: transparent;
-            border-color: transparent;
-        }
-    }
+  }
 }
