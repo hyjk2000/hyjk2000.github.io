@@ -38,13 +38,17 @@ permalink: /download/
 
 [www.sublimetext.com][4]　[下载页][5]　[Package Control][6]
 
+## DevDocs　<span style="font-weight:normal; font-size:13px; color:gray">程序员文档检索工具</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">Chrome + Mac</span>
+
+[Chrome 网上应用店][47]　[macOS 桌面版][48]
+
 ## 谷歌拼音输入法　<span style="font-weight:normal; font-size:13px; color:gray">这才是输入法，不是乱七八糟的流氓软件</span>
 
-[Google Pinyin][35] [标准版][36]
+[Google Pinyin][35]　[标准版][36]
 
 ## Avira Free Antivirus　<span style="font-weight:normal; font-size:13px; color:gray">这才是杀毒软件，不是乱七八糟的流氓软件</span>
 
-[www.avira.com][37] [下载页][38]
+[www.avira.com][37]　[下载页][38]
 
 ## GitKraken　<span style="font-weight:normal; font-size:13px; color:gray">新的 Git 图形界面客户端</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC + Mac + Linux</span>
 
@@ -104,7 +108,7 @@ permalink: /download/
 
 ## 派对抽奖　<span style="font-weight:normal; font-size:13px; color:gray">在派对、婚礼、公司年会等活动现场举行抽奖活动</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">Chrome + PC + Mac</span>
 
-[Chrome 网上应用店][43]　[Windows & OS X 桌面版][44]
+[Chrome 网上应用店][43]　[Windows & macOS 桌面版][44]
 
  [1]: https://www.google.com/chrome/eula.html?system=true&standalone=1
  [2]: https://www.mozilla.org/en-US/firefox/all/#zh-CN
@@ -147,3 +151,5 @@ permalink: /download/
  [44]: http://pan.baidu.com/s/1c1H6Q7u
  [45]: https://www.gitkraken.com/
  [46]: https://www.gitkraken.com/download
+ [47]: https://goo.gl/3m0mwo
+ [48]: https://goo.gl/X8KvAU
