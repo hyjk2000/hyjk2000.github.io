@@ -38,9 +38,13 @@ permalink: /download/
 
 [www.sublimetext.com][4]　[下载页][5]　[Package Control][6]
 
-## DevDocs　<span style="font-weight:normal; font-size:13px; color:gray">程序员文档检索工具</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">Chrome + Mac</span>
+## DevDocs　<span style="font-weight:normal; font-size:13px; color:gray">程序员的文档检索工具</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">Chrome + Mac</span>
 
 [Chrome 网上应用店][47]　[macOS 桌面版][48]
+
+## mpv　<span style="font-weight:normal; font-size:13px; color:gray">程序员的媒体播放器</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">PC + Mac + Linux</span>
+
+[mpv.io][49]　[下载][50]
 
 ## 谷歌拼音输入法　<span style="font-weight:normal; font-size:13px; color:gray">这才是输入法，不是乱七八糟的流氓软件</span>
 
@@ -153,3 +157,5 @@ permalink: /download/
  [46]: https://www.gitkraken.com/download
  [47]: https://goo.gl/3m0mwo
  [48]: https://goo.gl/X8KvAU
+ [49]: https://mpv.io/
+ [50]: https://mpv.io/installation/
