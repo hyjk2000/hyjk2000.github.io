@@ -44,7 +44,7 @@ permalink: /download/
 
 ## mpv　<span style="font-weight:normal; font-size:13px; color:gray">程序员的媒体播放器</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">PC + Mac + Linux</span>
 
-[mpv.io][49]　[下载][50]
+[mpv.io][49]　[示例配置文件][50]
 
 ## 谷歌拼音输入法　<span style="font-weight:normal; font-size:13px; color:gray">这才是输入法，不是乱七八糟的流氓软件</span>
 
@@ -158,4 +158,4 @@ permalink: /download/
  [47]: https://goo.gl/3m0mwo
  [48]: https://goo.gl/X8KvAU
  [49]: https://mpv.io/
- [50]: https://mpv.io/installation/
+ [50]: https://gist.github.com/hyjk2000/8b11e179a5d0a40aa1e65a15b6d092bc
