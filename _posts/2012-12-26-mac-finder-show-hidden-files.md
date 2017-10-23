@@ -37,7 +37,7 @@ killall Finder
 
 <a class="btn" href="/media/legacy/2012/12/显示隐藏文件.workflow.zip">显示隐藏文件.workflow.zip</a>
 
-下载以上文件解压，将 **显示隐藏文件.workflow** 移动（按 <span class="hotkey" title="Command + C">⌘C</span> 和 <span class="hotkey" title="Option + Command + V">⌥⌘V</span> 来移动）到 **~/Library/Services** 目录（在 Finder 中按 <span class="hotkey" title="Shift + Command + G">⇧⌘G</span>，输入上述路径来直接打开此目录）。最后在终端中使用 **killall Finder** 重新启动 Finder 即可。
+下载以上文件解压，将 **显示隐藏文件.workflow** 移动（按 <kbd title="Command + C">⌘C</kbd> 和 <kbd title="Option + Command + V">⌥⌘V</kbd> 来移动）到 **~/Library/Services** 目录（在 Finder 中按 <kbd title="Shift + Command + G">⇧⌘G</kbd>，输入上述路径来直接打开此目录）。最后在终端中使用 **killall Finder** 重新启动 Finder 即可。
 
 以后每次需要切换显示隐藏文件时，只要在 Finder 菜单的 **服务** 下选择 **显示隐藏文件** 即可。
 

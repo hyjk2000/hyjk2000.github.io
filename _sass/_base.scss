@@ -288,11 +288,12 @@ pre {
 
 
 
-// Hotkey
-.hotkey {
+// Keyboard Shorcuts
+kbd {
   padding: 0.2em 0.4em;
   border-radius: 1.5em;
   background: #EEE;
+  font-family: inherit;
   font-weight: normal !important;
 }
 

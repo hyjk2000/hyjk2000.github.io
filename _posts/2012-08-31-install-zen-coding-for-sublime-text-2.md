@@ -47,23 +47,23 @@ select#month[name=month]>option[value="$"]*12>{$月}
 
 **1. 安装 Package Control**
 
-Package Control 是 Sublime Text 2 的插件管理器，我们需要它来安装很多有用的插件，例如 Zen Coding。按 <span class="hotkey" title="Control + `">⌃`</span> 打开控制台，输入以下命令，按 <span class="hotkey" title="Return">⏎</span>：
+Package Control 是 Sublime Text 2 的插件管理器，我们需要它来安装很多有用的插件，例如 Zen Coding。按 <kbd title="Control + `">⌃`</kbd> 打开控制台，输入以下命令，按 <kbd title="Return">⏎</kbd>：
 
 ```python
 import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
 ```
 
-很快安装就会完成，按 <span class="hotkey" title="Command + Q">⌘Q</span> 退出再重新启动。
+很快安装就会完成，按 <kbd title="Command + Q">⌘Q</kbd> 退出再重新启动。
 
 **2. 安装 Zen Coding**
 
-按 <span class="hotkey" title="Shift + Command + P">⇧⌘P</span> 打开命令面板，输入命令 install package，按 <span class="hotkey" title="Return">⏎</span>。这时下方会出现一个插件列表，输入 <del datetime="2012-11-15T06:21:47+00:00">zencoding</del> emmet，在下方列表中选择 <del datetime="2012-11-15T06:21:47+00:00">ZenCoding</del> Emmet 即可。
+按 <kbd title="Shift + Command + P">⇧⌘P</kbd> 打开命令面板，输入命令 install package，按 <kbd title="Return">⏎</kbd>。这时下方会出现一个插件列表，输入 <del datetime="2012-11-15T06:21:47+00:00">zencoding</del> emmet，在下方列表中选择 <del datetime="2012-11-15T06:21:47+00:00">ZenCoding</del> Emmet 即可。
 
 **Update (11/15/2012): **Zen Coding 现已改名 Emmet，原安装方法将无法继续使用，请输入 emmet 来安装。若你已经安装了 Zen Coding，请先在命令面板中输入 remove package，移除原来的 Zen Coding，再重新安装 Emmet。
 
 **3. 激活 Zen Coding 缩写模式**
 
-在 HTML 文档中（新建文档是不行的），按 <span class="hotkey" title="Control + Option + Return">⌃⌥⏎</span> 激活 Zen Coding 缩写模式。在底部的框中输入缩写，输出效果会直接在光标处呈现。
+在 HTML 文档中（新建文档是不行的），按 <kbd title="Control + Option + Return">⌃⌥⏎</kbd> 激活 Zen Coding 缩写模式。在底部的框中输入缩写，输出效果会直接在光标处呈现。
 
 要了解更多 Zen Coding 缩写的语法，请参考：[How to Use Zen Coding][1]
 要为 Notepad++、Dreamweaver 等安装 Zen Coding，请参考：[Zen Coding Downloads][2]

@@ -14,7 +14,7 @@ tags:
 ---
 iOS 设备的屏幕录像一直是不太方便的，开发者录制视频时，往往还处在用摄像机直接翻拍屏幕的阶段。而 iOS 8 带来了一个鲜为人知的新功能，给开发者带来了便利。只需要把设备连接到 Mac，利用 QuickTime Player 就可以方便地录制了。
 
-利用 QuickTime Player 录制 Mac 的屏幕录像，很多人应该都很熟悉了。给 iOS 8 设备录像同样很简单。打开 QuickTime Player，在 **文件** 菜单中选择 **新建影片录制**，或按 <span class="hotkey" title="Option + Command + N">⌥⌘N</span>：
+利用 QuickTime Player 录制 Mac 的屏幕录像，很多人应该都很熟悉了。给 iOS 8 设备录像同样很简单。打开 QuickTime Player，在 **文件** 菜单中选择 **新建影片录制**，或按 <kbd title="Option + Command + N">⌥⌘N</kbd>：
 
 <figure>
   <img src="/media/2014/2014-10-21-ios-8-screen-recording/1.png" alt="新建影片录制">
