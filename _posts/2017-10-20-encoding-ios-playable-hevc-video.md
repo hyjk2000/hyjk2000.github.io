@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 为 iOS 制作 HEVC 视频
-quote: 想要 AirPlay 无线音箱？只要手上有一只旧 iPhone 加上任何带 3.5mm AUX 输入的音箱
 date: "2017-10-20 21:54:16 +0800"
 slug: encoding-ios-playable-hevc-video
 author: James Shih
