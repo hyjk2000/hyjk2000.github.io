@@ -36,7 +36,7 @@ tags:
 
 对于邮件、通讯录、日历、提醒事项和备忘录，你可以选择使用 iCloud、Google、Outlook 或者 Exchange 服务等等，数据会自动同步到云端。如果你在激活设备时选择登录到 iCloud，那么很可能你已经在使用 iCloud 同步这些数据了。
 
-至于照片和视频，[iCloud 照片图库](https://support.apple.com/zh-cn/HT204264)是不错的选择，除了起到备份的作用，还可以把照片（以及你对照片的编辑）同步到电脑。你还可以选择在设备上只存储压缩过的图片以节约存储空间。当然，也有很多类似的服务可供选择，比如 [Google 相册](https://photos.google.com)和[OneDrive](https://onedrive.live.com/)。
+至于照片和视频，[iCloud 照片图库](https://support.apple.com/zh-cn/HT204264)是不错的选择，除了起到备份的作用，还可以把照片（以及你对照片的编辑）同步到电脑。你还可以选择在设备上只存储压缩过的图片以节约存储空间。当然，也有很多类似的服务可供选择，比如 [Google 相册](https://photos.google.com)和 [OneDrive](https://onedrive.live.com/)。
 
 ## 打开“查找我的 iPhone”
 
@@ -70,7 +70,7 @@ tags:
 
 ## 保护你的 SIM 卡
 
-如果你的 Apple ID 是用手机号码注册的，你需要保护你的 SIM 卡的安全。任何人都能利用你的 SIM 卡接收电话和短信。另外，由于国内对手机短信验证码安全性的过分依赖，很可能你的很多账号，包括银行账号，都依仗你的 SIM 卡的安全。所以，[利用 PIN 码锁定 SIM 卡](https://support.apple.com/zh-cn/HT201529)是非常有必要的。任何人使用该卡开机时都必须输入 PIN 码才能解锁 SIM 卡。
+如果你的 Apple ID 是用手机号码注册的，你需要保护你的 SIM 卡的安全。任何人都能利用你的 SIM 卡接收电话和短信。另外，由于国内对手机短信验证码安全性的过分依赖，很可能你的很多账号，包括银行账号，都倚仗你的 SIM 卡的安全。所以，[利用 PIN 码锁定 SIM 卡](https://support.apple.com/zh-cn/HT201529)是非常有必要的。任何人使用该卡开机时都必须输入 PIN 码才能解锁 SIM 卡。
 
 另外值得注意的是，通知预览可能会使通过短信接收到的验证码即使在设备锁定的情况下也能显示出来，这可以通过“信息”的[通知设置](https://support.apple.com/zh-cn/HT201925#settings)来关闭。
 
