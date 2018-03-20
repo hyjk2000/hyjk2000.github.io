@@ -30,9 +30,9 @@ permalink: /download/
     </dd>
 </dl>
 
-## Atom　<span style="font-weight:normal; font-size:13px; color:gray">新的程序员文本编辑器</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">PC + Mac + Linux</span>
+## Visual Studio Code　<span style="font-weight:normal; font-size:13px; color:gray">新的程序员文本编辑器</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">PC + Mac + Linux</span>
 
-[atom.io][39]　[Releases][40]
+[code.visualstudio.com][39]　[Source][40]
 
 ## Sublime Text　<span style="font-weight:normal; font-size:13px; color:gray">程序员的文本编辑器</span>　<span class="red tag">商业软件</span>　<span class="gray tag">PC + Mac + Linux</span>
 
@@ -41,6 +41,18 @@ permalink: /download/
 ## DevDocs　<span style="font-weight:normal; font-size:13px; color:gray">程序员的文档检索工具</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">Chrome + Mac</span>
 
 [Chrome 网上应用店][47]　[macOS 桌面版][48]
+
+## Poker4Fun　<span style="font-weight:normal; font-size:13px; color:gray">♠️ A friendly, vivid, easy-to-use scrum poker.</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">Web + Mobile</span>
+
+[Poker4Fun][7]　[Web Source][8]　[Mobile Source][9]
+
+## GitKraken　<span style="font-weight:normal; font-size:13px; color:gray">新的 Git 图形界面客户端</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC + Mac + Linux</span>
+
+[www.gitkraken.com][45]　[下载页][46]
+
+## SourceTree　<span style="font-weight:normal; font-size:13px; color:gray">Git 图形界面客户端</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC + Mac</span>
+
+[www.sourcetreeapp.com][34]
 
 ## mpv　<span style="font-weight:normal; font-size:13px; color:gray">程序员的媒体播放器</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">PC + Mac + Linux</span>
 
@@ -54,25 +66,9 @@ permalink: /download/
 
 [www.avira.com][37]　[下载页][38]
 
-## GitKraken　<span style="font-weight:normal; font-size:13px; color:gray">新的 Git 图形界面客户端</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC + Mac + Linux</span>
-
-[www.gitkraken.com][45]　[下载页][46]
-
-## SourceTree　<span style="font-weight:normal; font-size:13px; color:gray">Git 图形界面客户端</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC + Mac</span>
-
-[www.sourcetreeapp.com][34]
-
-## Notepad++　<span style="font-weight:normal; font-size:13px; color:gray">另一款优秀的文本编辑器</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">PC</span>
-
-[notepad-plus-plus.org][12]　[下载页][13]
-
 ## Colormania　<span style="font-weight:normal; font-size:13px; color:gray">适合网页设计师使用的调色小工具</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC</span>
 
 [www.blacksunsoftware.com/colormania.html][14]
-
-## Skype 国际版　<span style="font-weight:normal; font-size:13px; color:gray">保护通讯隐私，拒绝监控过滤</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC + Mac</span>
-
-[Windows][15]　[Mac][16]
 
 ## VirtualBox　<span style="font-weight:normal; font-size:13px; color:gray">强大的虚拟机软件</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">PC + Mac + Linux</span>
 
@@ -106,10 +102,6 @@ permalink: /download/
 
 [boxerapp.com][29]　[下载][30]
 
-## Dota 2　<span style="font-weight:normal; font-size:13px; color:gray">Steam 国际版</span>　<span class="green tag">免费软件</span>　<span class="gray tag">PC + Mac + Linux</span>
-
-[www.dota2.com][31]　[安装][32]
-
 ## 派对抽奖　<span style="font-weight:normal; font-size:13px; color:gray">在派对、婚礼、公司年会等活动现场举行抽奖活动</span>　<span class="blue tag">开源软件</span>　<span class="gray tag">Chrome + PC + Mac</span>
 
 [Chrome 网上应用店][43]　[Windows & macOS 桌面版][44]
@@ -120,11 +112,10 @@ permalink: /download/
  [4]: https://www.sublimetext.com/
  [5]: https://www.sublimetext.com/3
  [6]: https://packagecontrol.io/
- [12]: https://notepad-plus-plus.org/
- [13]: https://notepad-plus-plus.org/download/
+ [7]: https://poker4.fun
+ [8]: https://github.com/IFS49F/poker
+ [9]: https://github.com/IFS49F/poker-mobile
  [14]: http://www.blacksunsoftware.com/colormania.html
- [15]: https://www.skype.com/go/getskype-full
- [16]: https://www.skype.com/go/getskype-macosx.dmg
  [17]: https://www.virtualbox.org/
  [18]: https://www.virtualbox.org/wiki/Downloads
  [19]: https://unarchiver.c3.cx/
@@ -139,16 +130,14 @@ permalink: /download/
  [28]: http://pan.baidu.com/s/1zlds8
  [29]: http://boxerapp.com/
  [30]: http://boxerapp.com/download/latest
- [31]: https://www.dota2.com/
- [32]: steam://install/570
  [33]: https://sourceforge.net/projects/xld/
  [34]: https://www.sourcetreeapp.com/
  [35]: https://www.google.com/intl/zh-CN/ime/pinyin/
  [36]: https://dl.google.com/pinyin/v2/GooglePinyinInstaller.exe
  [37]: https://www.avira.com/
  [38]: https://www.avira.com/zh-cn/download?product=avira-free-antivirus
- [39]: https://atom.io
- [40]: https://github.com/atom/atom/releases
+ [39]: https://code.visualstudio.com
+ [40]: https://github.com/Microsoft/vscode
  [41]: https://rufus.akeo.ie/?locale=zh_CN
  [42]: https://hyjk2000.github.io/party-lottery/
  [43]: https://goo.gl/6B2bnn

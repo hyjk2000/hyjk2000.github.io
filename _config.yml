@@ -43,7 +43,7 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - vendor
-gems:
+plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-sitemap
