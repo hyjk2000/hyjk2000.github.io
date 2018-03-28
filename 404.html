@@ -8,28 +8,25 @@ body {
     perspective: 1600px;
 }
 .site-header {
-    transform: rotate(3deg);
     transform-origin: left;
-    animation: drop 1s ease-in;
+    animation: 1s ease-in 1s 1 forwards drop;
 }
 @keyframes drop {
-    from { transform: rotate(0) }
+    to { transform: rotate(3deg) }
 }
 .post-header {
-    transform: rotate(-2deg);
     transform-origin: right;
-    animation: swing 1s ease-in;
+    animation: 1s ease-in 2.5s 1 forwards swing;
 }
 @keyframes swing {
-    from { transform: rotate(0) }
+    to { transform: rotate(-2deg) }
 }
 .site-footer {
-    transform: rotateX(60deg);
     transform-origin: bottom;
-    animation: fall 1s ease-in;
+    animation: 1s ease-in 4s 1 forwards fall;
 }
 @keyframes fall {
-    from { transform: rotateX(0) }
+    to { transform: rotateX(60deg) }
 }
 .fail {
     text-align: center;
@@ -39,18 +36,18 @@ body {
 }
 .hand {
     display: inline-block;
-    animation: raise 4s infinite alternate;
+    animation: 4s linear 3s infinite alternate raise;
 }
 @keyframes raise {
-    80% { transform: translateY(0) }
+    75% { transform: translateY(0) }
     to { transform: translateY(-.2em) }
 }
 .head {
     display: inline-block;
-    animation: rotate 4s infinite alternate;
+    animation: 4s linear 3s infinite alternate rotate;
 }
 @keyframes rotate {
-    80% { transform: rotate(0) }
+    75% { transform: rotate(0) }
     to { transform: rotate(15deg) }
 }
 </style>
