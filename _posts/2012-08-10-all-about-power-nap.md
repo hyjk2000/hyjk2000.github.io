@@ -11,9 +11,9 @@ tags:
   - Mountain Lion
   - OS X
   - Power Nap
-bg_url: /media/legacy/2012/08/20120810_all-about-power-nap.jpg
-bg_author: pauldavidy / flickr
-bg_source: https://www.flickr.com/photos/pauldavidy/5643448293/
+image: /media/legacy/2012/08/20120810_all-about-power-nap.jpg
+image_author: pauldavidy / flickr
+image_source: https://www.flickr.com/photos/pauldavidy/5643448293/
 ---
 Apple 在 OS X Mountain Lion 中新增了一个很新鲜的功能：Power Nap，也就是“小睡”功能。这个功能可以让 Mac 在睡眠状态下做一些更新、同步的活儿，以便让我们在使用电脑时不需要再等着它更新。很多人对于它能做什么、费不费电不太了解，不敢启用它。于是我对此进行了一些研究。
 

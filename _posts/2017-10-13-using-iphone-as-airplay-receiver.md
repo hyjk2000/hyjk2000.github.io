@@ -11,7 +11,7 @@ tags:
   - AirPlay
   - 旧物利用
   - iPhone
-bg_url: /media/2017/2017-10-13-using-iphone-as-airplay-receiver/AirFloat-0.png
+image: /media/2017/2017-10-13-using-iphone-as-airplay-receiver/AirFloat-0.png
 ---
 想要 AirPlay 无线音箱？只要手上有一只旧 iPhone 加上任何带 3.5mm AUX 输入的音箱，你就可以自制一个，而且方法非常简单。
 

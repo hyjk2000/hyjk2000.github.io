@@ -1,0 +1,11 @@
+{% capture image_copyright %}
+{% if page.image_author %}
+<div class="bg-info">
+  {% if page.image_source %}
+  <a href="{{ page.image_source }}">&copy; {{ page.image_author }}</a>
+  {% else %}
+  &copy; {{ page.image_author }}
+  {% endif %}
+</div>
+{% endif %}
+{% endcapture %}{{ image_copyright | strip_newlines }}

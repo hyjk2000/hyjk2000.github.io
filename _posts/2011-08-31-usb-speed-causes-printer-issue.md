@@ -3,7 +3,7 @@ title: USB速度设置导致打印机无法打印
 author: James Shih
 layout: post
 permalink: /2011/08/31/usb-speed-causes-printer-issue/
-bg_url: /media/legacy/2011/08/20110831_printer-usb-speed.jpg
+image: /media/legacy/2011/08/20110831_printer-usb-speed.jpg
 categories:
 tags:
   - hp

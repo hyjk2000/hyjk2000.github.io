@@ -3,7 +3,7 @@ title: 雪佛兰2010款赛欧体验报告
 author: James Shih
 layout: post
 permalink: /2011/01/05/2010-chevrolet-sail-review/
-bg_url: /media/legacy/2011/01/2010-chevrolet-sail-review-1.jpg
+image: /media/legacy/2011/01/2010-chevrolet-sail-review-1.jpg
 jabber_published:
   - 1294199728
 categories:

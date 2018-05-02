@@ -17,7 +17,7 @@ tags:
   - MP4Box
   - subtitle
   - 字幕
-bg_url: /media/legacy/2013/07/20130727_making-mp4-video-with-subtitle-tracks-for-ios-device_1.png
+image: /media/legacy/2013/07/20130727_making-mp4-video-with-subtitle-tracks-for-ios-device_1.png
 ---
 iPad 和 iPhone 最棒的用途之一就是看电影了。本来我们可以在 iTunes Store 上方便地购买和租赁正版电影和电视节目，但杯具的是 iTunes Store 并不对中国开放。于是，除了 DVD 和蓝光光盘外，网络下载就成了获取内容的唯一途径。
 
