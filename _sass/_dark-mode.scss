@@ -1,47 +1,85 @@
-@media (prefers-color-scheme: dark) {
+@mixin dark-mode {
+  $text-color:       rgb(214, 214, 214);
+  $background-color: rgb(34, 34, 34);
+  $nav-color:        rgb(204, 204, 204);
+  $header-bg-color:  rgba(0, 0, 0, 0.7);
+  $code-bg-color:    rgb(68, 68, 68);
+  $table-row-odd-bg: rgb(41, 41, 41);
+  $footer-color:     rgb(188, 188, 188);
+  $footer-bg-color:  rgb(17, 17, 17);
+
   body {
-    color: #cccccc;
-    background-color: #333333;
+    color: $text-color;
+    background-color: $background-color;
   }
 
   .site-header {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #cccccc;
-    border-bottom-color: rgba(57, 57, 57, 0.7);
+    background-color: $header-bg-color;
+    color: $nav-color;
+    border-bottom-color: $grey-color-dark;
+  }
+
+  .site-nav {
+    @include media-query($on-palm) {
+      .menu-icon > svg path {
+        fill: $nav-color;
+      }
+
+      .trigger a {
+        color: $text-color;
+      }
+
+      &:hover {        
+        background-color: $background-color;
+        border-color: $grey-color-dark;
+      }
+    }
   }
 
   .site-title,
   .site-title:visited,
   .site-nav .page-link {
-    color: #cccccc;
+    color: $text-color;
   }
 
   .site-footer {
-    background-color: #111111;
-    border-top-color: rgba(57, 57, 57, 0.7);
-    color: #cccccc;
+    background-color: $footer-bg-color;
+    border-top-color: $grey-color-dark;
+    color: $footer-color;
+
+    a {
+      color: $footer-color;
+
+      &:hover {
+        color: darken($footer-color, 25%);
+      }
+    }
   }
 
-  .site-footer * {
-    color: #cccccc;
+  table:not(.highlight) {
+    tbody>tr:nth-of-type(odd) {
+      background-color: $table-row-odd-bg;
+    }
+
+    th,
+    td {
+      border-color: $grey-color-dark;
+    }
   }
 
-  table tbody>tr:nth-of-type(odd) {
-    background-color: #292929;
-  }
-
-  table th,
-  table td {
-    border-color: #222222;
-  }
 
   a:hover {
-    color: #ffffff;
+    color: $text-color
   }
 
   pre,
   code,
   kbd {
-    background: #444444;
+    background: $code-bg-color;
+    border-color: $grey-color-dark;
   }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  @include dark-mode;
 }

@@ -15,6 +15,10 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 $header-height:    56px;
 
+$grey-color:       rgb(130, 130, 130);
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
 $text-color:       rgb(51, 51, 51);
 $background-color: rgb(253, 253, 253);
 $brand-color:      rgb(42, 122, 226);
@@ -22,12 +26,10 @@ $nav-color:        rgb(51, 51, 51);
 $header-bg-color:  rgba(255, 255, 255, 0.7);
 $header-color:     rgb(199, 205, 208);
 $title-bg-color:   rgb(96, 125, 139);
+$code-bg-color:    rgb(238, 238, 238);
+$table-row-odd-bg: rgb(249, 249, 249);
 $footer-color:     rgb(102, 102, 102);
 $footer-bg-color:  rgb(238, 238, 238);
-
-$grey-color:       rgb(130, 130, 130);
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
