@@ -1,0 +1,47 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #cccccc;
+    background-color: #333333;
+  }
+
+  .site-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #cccccc;
+    border-bottom-color: rgba(57, 57, 57, 0.7);
+  }
+
+  .site-title,
+  .site-title:visited,
+  .site-nav .page-link {
+    color: #cccccc;
+  }
+
+  .site-footer {
+    background-color: #111111;
+    border-top-color: rgba(57, 57, 57, 0.7);
+    color: #cccccc;
+  }
+
+  .site-footer * {
+    color: #cccccc;
+  }
+
+  table tbody>tr:nth-of-type(odd) {
+    background-color: #292929;
+  }
+
+  table th,
+  table td {
+    border-color: #222222;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+
+  pre,
+  code,
+  kbd {
+    background: #444444;
+  }
+}
