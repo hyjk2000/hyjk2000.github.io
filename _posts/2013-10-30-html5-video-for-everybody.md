@@ -164,7 +164,7 @@ var canPlayMP4 = document.createElement("video").canPlayType('video/mp4; codecs=
 // ""：浏览器无法支持指定的容器
 ```
 
-要测试你的浏览器对各种 MIME Type 的支持情况，<a href="http://playgroundclassic.applinzi.com//html5-video-audio-types/" target="_blank">点击此处</a>。
+要测试你的浏览器对各种 MIME Type 的支持情况，<a href="/mini-sites/html5-video-audio-types/" target="_blank">点击此处</a>。
 
 ### 为 HTML5 制作视频
 

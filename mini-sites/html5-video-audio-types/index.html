@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Browser Support of HTML5 Video/Audio Types</title>
+	<style>
+	* { font-family:"Lucida Grande", "Segoe UI Light", sans-serif; }
+	body { font-size:14px; }
+	th, td { padding:5px; }
+	code, #chart td, .no-support, .maybe, .probably { font-family:"Monaco", "Consolas", monospace; }
+	.no-support, .maybe, .probably { text-align:center; }
+	.no-support { background-color:#FF6347; }
+	.maybe { background-color:#F9E186; }
+	.probably { background-color:lightgreen; }
+	#chart tr:nth-child(2n+1) { background-color:#DDD; }
+	</style>
+</head>
+<body>
+<h1>Browser Support of HTML5 Video/Audio Types</h1>
+<p>
+	<table class="legend">
+		<tr><td class="probably">probably</td><td>Most likely support</td><td>MIME Type supported, codecs parameter set and supported</td></tr>
+		<tr><td class="maybe">maybe</td><td>Might support</td><td>MIME Type supported, codecs parameter not set</td></tr>
+		<tr><td class="no-support">&nbsp;</td><td>No support</td><td>MIME Type not supported, or codecs parameter not supported</td></tr>
+	</table>
+	<p><b>Note: </b>The table below lists the results of <code>canPlayType(type)</code> for your browser. It does not necessarily relate to what the browsers actually <i>can</i> play.</p>
+</p>
+<table id="chart">
+	<tr><th>MIME</th><th>Your Browser</th></tr>
+</table>
+<script>
+(function () {
+	var videoTypes = [
+		'application/ogg',
+		'application/ogg; codecs=bogus',
+		'application/mp4',
+		'application/mp4; codecs=bogus',
+		'application/octet-stream',
+		'application/octet-stream; codecs=bogus',
+		'audio/3gpp',
+		'audio/3gpp2',
+		'audio/aac',
+		'audio/x-aac',
+		'audio/aiff',
+		'audio/x-aiff',
+		'audio/ac3',
+		'audio/x-ac3',
+		'audio/basic',
+		'audio/flac',
+		'audio/x-flac',
+		'audio/mid',
+		'audio/midi',
+		'audio/x-midi',
+		'audio/mpeg',
+		'audio/x-mpeg',
+		'audio/mpegurl',
+		'audio/x-mpegurl',
+		'audio/mp4',
+		'audio/mp4; codecs=bogus',
+		'audio/ogg',
+		'audio/ogg; codecs=bogus',
+		'audio/wav',
+		'audio/wav; codecs=0',
+		'audio/wav; codecs=1',
+		'audio/wav; codecs=2',
+		'audio/wave',
+		'audio/wave; codecs=0',
+		'audio/wave; codecs=1',
+		'audio/wave; codecs=2',
+		'audio/x-wav',
+		'audio/x-wav; codecs=0',
+		'audio/x-wav; codecs=1',
+		'audio/x-wav; codecs=2',
+		'audio/x-pn-wav',
+		'audio/x-pn-wav; codecs=0',
+		'audio/x-pn-wav; codecs=1',
+		'audio/x-pn-wav; codecs=2',
+		'video/3gpp',
+		'video/3gpp2',
+		'video/avi',
+		'video/mpeg',
+		'video/x-mpeg',
+		'video/mp4',
+		'video/mp4; codecs=bogus',
+		'video/msvideo',
+		'video/x-msvideo',
+		'video/quicktime',
+		'video/ogg',
+		'video/ogg; codecs=bogus',
+		'video/mp4; codecs="avc1.42E01E, mp4a.40.2"',
+		'video/mp4; codecs="avc1.58A01E, mp4a.40.2"',
+		'video/mp4; codecs="avc1.4D401E, mp4a.40.2"',
+		'video/mp4; codecs="avc1.64001E, mp4a.40.2"',
+		'video/mp4; codecs="mp4v.20.8, mp4a.40.2"',
+		'video/mp4; codecs="mp4v.20.240, mp4a.40.2"',
+		'video/3gpp; codecs="mp4v.20.8, samr"',
+		'video/ogg; codecs="theora, vorbis"',
+		'video/ogg; codecs="theora, speex"',
+		'audio/ogg; codecs=vorbis',
+		'audio/ogg; codecs=speex',
+		'audio/ogg; codecs=flac',
+		'video/ogg; codecs="dirac, vorbis"',
+		'video/x-matroska; codecs="theora, vorbis"',
+		'audio/webm',
+		'audio/webm; codecs=vorbis',
+		'video/webm',
+		'video/webm; codecs=vorbis',
+		'video/webm; codecs=vp8',
+		'video/webm; codecs=vp8.0',
+		'video/webm; codecs="vp8, vorbis"'
+	];
+	var video = document.createElement("video"),
+		chart = document.getElementById("chart"),
+		tr,
+		tdType,
+		tdCanPlay;
+	for (var i = 0, length = videoTypes.length; i < length; i++) {
+		tdType = document.createElement("td");
+		tdType.textContent = videoTypes[i];
+		tdCanPlay = document.createElement("td");
+		tdCanPlay.textContent = video.canPlayType( videoTypes[i] );
+		tdCanPlay.className = tdCanPlay.textContent || "no-support";
+		tr = document.createElement("tr");
+		tr.appendChild(tdType), tr.appendChild(tdCanPlay);
+		chart.appendChild(tr);
+	}
+})();
+</script>
+</body>
+</html>
