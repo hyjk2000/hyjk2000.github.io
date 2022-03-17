@@ -50,7 +50,7 @@ $meWrapper.css('left', x + 'px');
 
 我已将这个比较完整的实现做成 jQuery 插件，请参见：
 
-<a class="btn" href="http://hyjk2000.github.io/jquery.sticky-float/">Demo</a>
+<a class="btn" href="https://jshih.dev/jquery.sticky-float/">Demo</a>
 
 **UPDATE(10/26/2011): **
 

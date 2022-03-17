@@ -139,7 +139,7 @@ permalink: /download/
  [39]: https://code.visualstudio.com
  [40]: https://github.com/Microsoft/vscode
  [41]: https://rufus.akeo.ie/?locale=zh_CN
- [42]: https://hyjk2000.github.io/party-lottery/
+ [42]: https://jshih.dev/party-lottery/
  [43]: https://goo.gl/6B2bnn
  [44]: http://pan.baidu.com/s/1c1H6Q7u
  [45]: https://www.gitkraken.com/
