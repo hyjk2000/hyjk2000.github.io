@@ -37,6 +37,8 @@ permalink: /:year/:month/:day/:title.html
 highlighter: rouge
 gist:
   noscript: false
+include:
+  - .well-known
 exclude:
   - README.md
   - Gemfile
